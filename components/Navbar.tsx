@@ -1,7 +1,7 @@
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import ThemeSwitcher from "./ThemeSwitcher"
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navbar() {
   return (
@@ -19,20 +19,36 @@ export default function Navbar() {
             <span className="sr-only">Acme Inc</span>
           </Link>
           <div className="grid gap-2 py-6">
-            <Link href="#" className="flex w-full items-center py-2 text-lg font-semibold" prefetch={false}>
+            <Link
+              href="#"
+              className="flex w-full items-center py-2 text-lg font-semibold"
+              prefetch={false}
+            >
               Home
             </Link>
-            <Link href="#" className="flex w-full items-center py-2 text-lg font-semibold" prefetch={false}>
+            <Link
+              href="#"
+              className="flex w-full items-center py-2 text-lg font-semibold"
+              prefetch={false}
+            >
               About
             </Link>
-            <Link href="#" className="flex w-full items-center py-2 text-lg font-semibold" prefetch={false}>
+            <Link
+              href="#"
+              className="flex w-full items-center py-2 text-lg font-semibold"
+              prefetch={false}
+            >
               Services
             </Link>
-            <Link href="#" className="flex w-full items-center py-2 text-lg font-semibold" prefetch={false}>
+            <Link
+              href="#"
+              className="flex w-full items-center py-2 text-lg font-semibold"
+              prefetch={false}
+            >
               Contact
             </Link>
-            
-            <ThemeSwitcher/>
+
+            <ThemeSwitcher />
           </div>
         </SheetContent>
       </Sheet>
@@ -69,12 +85,14 @@ export default function Navbar() {
         >
           Contact
         </Link>
+
+        <ThemeSwitcher />
       </nav>
     </header>
-  )
+  );
 }
 
-function MenuIcon(props:any) {
+function MenuIcon(props: any) {
   return (
     <svg
       {...props}
@@ -92,11 +110,10 @@ function MenuIcon(props:any) {
       <line x1="4" x2="20" y1="6" y2="6" />
       <line x1="4" x2="20" y1="18" y2="18" />
     </svg>
-  )
+  );
 }
 
-
-function MountainIcon(props:any) {
+function MountainIcon(props: any) {
   return (
     <svg
       {...props}
@@ -112,5 +129,5 @@ function MountainIcon(props:any) {
     >
       <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
     </svg>
-  )
+  );
 }
