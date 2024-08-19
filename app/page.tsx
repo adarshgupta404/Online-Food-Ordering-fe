@@ -1,5 +1,10 @@
-export default function Home(){
-  return (<main>
-    this is home page
-  </main>)
+import Navbar from "@/components/Navbar";
+
+export default function Home() {
+  return (
+    <main>
+      <Navbar />
+      this is home page
+    </main>
+  );
 }
