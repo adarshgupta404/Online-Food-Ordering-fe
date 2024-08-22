@@ -19,7 +19,7 @@ const ThemeSwitcher = () => {
       <TabsList className="border rounded-2xl p-1 flex justify-center gap-2 items-center">
 
         <label className="theme-switch">
-          <input type="checkbox" className="theme-switch__checkbox"  onClick={()=>{theme==='light' ? setTheme('dark') : setTheme('light')}} />
+          <input type="checkbox" className="theme-switch__checkbox" checked={theme==='dark'}  onClick={()=>{theme==='light' ? setTheme('dark') : setTheme('light')}} />
           <div className="theme-switch__container">
             <div className="theme-switch__clouds"></div>
             <div className="theme-switch__stars-container">
@@ -36,21 +36,6 @@ const ThemeSwitcher = () => {
             </div>
           </div>
         </label>
-
-        {/*         <TabsTrigger value="light" onClick={() => setTheme("light")}>
-          <SunIcon
-            classNameName={`${
-              theme === "light" ? "bg-primary-foreground" : ""
-            } hover:bg-primary-foreground hover:dark:text-black rounded-[5px] p-0.5 h-[1.3rem] w-[1.3rem]`}
-          />
-        </TabsTrigger>
-        <TabsTrigger value="dark" onClick={() => setTheme("dark")}>
-          <MoonIcon
-            classNameName={`${
-              theme === "dark" ? "bg-primary-foreground text-black" : ""
-            } hover:bg-primary-foreground hover:dark:text-black rounded-[5px] p-0.5 h-[1.3rem] w-[1.3rem] rotate-90 transition-all dark:rotate-0`}
-          />
-        </TabsTrigger> */}
 
         <TabsTrigger value="system" onClick={() => setTheme("system")}>
           <DesktopIcon
