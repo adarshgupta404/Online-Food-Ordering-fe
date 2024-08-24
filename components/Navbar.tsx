@@ -5,7 +5,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function Navbar() {
   return (
-    <header className="flex h-20 w-full shrink-0 items-center px-4 md:px-6 absolute z-10">
+    <header className="text-white flex h-20 w-full shrink-0 items-center px-4 md:px-6 fixed bg-black opacity-70 z-10">
       <Sheet>
         <SheetTrigger asChild>
           <Button variant="outline" size="icon" className="lg:hidden">

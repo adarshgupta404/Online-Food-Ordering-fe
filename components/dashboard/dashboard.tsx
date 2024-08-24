@@ -13,22 +13,20 @@ const Dashboard = () => {
   //   setData(data);
   // }
   // useEffect(() => {
-    // fetchData();
+  // fetchData();
   // }, []);
   return (
-    <div className="relative">
-      <div className="absolute w-full z-[1]">
-        <Image src={bg} alt="bg" height="600" width="800" className="brightness-90 saturate-150 contrast-125 opacity-85 w-full h-full "/>
+    <div className="">
+      <div className="absolute w-full">
+        <Image src={bg} alt="bg" height="900" width="1600" className=" brightness-90 saturate-150 contrast-125 opacity-85 w-full"/>
       </div>
-      <div className="absolute z-[2] w-full h-screen bg-none text-white transition-all">
-        <div className="flex flex-col items-center justify-center h-full">
-          <h1 className="text-3xl font-semibold">
-            Welcome to <span className="text-red-400 text-[1.2em]">P</span>omato
-          </h1>
-          <p className="">Release your food hunger now !</p>
+        <div className="absolute top-20 lg:top-1/2 md:top-1/3 left-1/2 -translate-x-1/2  text-white transition-all">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold"> Welcome to <span className="text-red-500 text-[1.2em]">P</span>omato</h1>
+            <p className="text-sm md:text-md">Best'um best place to release your food hunger !</p>
+          </div>
         </div>
-      </div>
-      {/* <div className="flex justify-center w-full bg-white h-64">HIIIIIIIIIIIIi</div> */}
+      <div className="flex justify-center w-full h-64">HIIIIIIIIIIIIi</div>
     </div>
   );
 };
